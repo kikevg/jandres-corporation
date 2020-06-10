@@ -15,3 +15,5 @@ window.onscroll = (e) => {
 }
 
 AOS.init();
+
+baguetteBox.run('#baguetteBox');

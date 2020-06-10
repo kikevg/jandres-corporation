@@ -125,7 +125,37 @@ body {
     box-shadow: none !important;
 }
 
+.card-columns .card {
+    overflow: hidden;
+    position: relative;
+}
+
+.card-columns .card .overlay {
+    background-color: rgba(0, 0, 0, .7);
+    top: 100%;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.card-columns .card img {
+    transition: .5s;
+}
+
+.card-columns .card:hover img {
+    transform: scale(1.1);
+}
+
+.card-columns .card:hover .overlay {
+    top: 0;
+}
+
 /* selectors id */
+
+#property {
+    padding: 10em 0;
+}
 
 footer {
     padding: 10em 0 0 0;
