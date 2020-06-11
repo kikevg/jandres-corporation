@@ -28,39 +28,72 @@
 <body>
 
     <!-- header & navigation -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container">
-                <a href="index.html" class="navbar-brand navbar-toggler border-0">
-                    <img src="media/logo.png" alt="" class="img-fluid" width="50">
-                </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-content">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="nav-content">
-                    <ul class="navbar-nav m-auto d-flex align-items-center">
-                        <li class="nav-item">
-                            <a href="#services" class="nav-link font-weight-bold text-uppercase px-5">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#property" class="nav-link font-weight-bold text-uppercase px-5">Inmuebles</a>
-                        </li>
-                        <li class="nav-item d-none d-md-block">
-                            <a href="#" class="nav-link px-4">
-                                <img src="media/logo.png" alt="" width="100">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link font-weight-bold text-uppercase px-5">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link font-weight-bold text-uppercase px-5">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+    <header class="py-3 d-none d-md-block">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div>
+                <ul class="list-unstyled d-flex">
+                    <li>
+                        <a href="#" class="d-block mx-2">
+                            <i class="fab fa-facebook-f text-dark"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-block mx-2">
+                            <i class="fab fa-twitter text-dark"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-block mx-2">
+                            <i class="fab fa-instagram text-dark"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-block mx-2">
+                            <i class="fab fa-youtube text-dark"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+            <div>
+                <a href="#">
+                    <img src="media/logo.png" alt="" class="m-auto" width="100">
+                </a>
+            </div>
+            <div class="text-dark">
+                Tel:
+                <span class="text-warning font-size-small">+503 2200-4805</span>
+                |
+                <span class="text-warning font-size-small">+503 7750-9428</span>
+            </div>
+        </div>
     </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top py-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand navbar-toggler border-0">
+                <img src="media/logo.png" alt="" class="img-fluid" width="50">
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-content">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-content">
+                <ul class="navbar-nav m-auto d-flex align-items-center">
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link font-weight-bold text-uppercase px-5">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#property" class="nav-link font-weight-bold text-uppercase px-5">Inmuebles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link font-weight-bold text-uppercase px-5">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link font-weight-bold text-uppercase px-5">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- main -->
     <main>
@@ -257,11 +290,12 @@
                 </div>
             </section>
 
+            <!-- gallery -->
             <section class="bg-white" id="property">
                 <div class="container">
-                    <h2 class="font-weight-bold text-center text-uppercase">Gallery</h2>
+                    <h2 class="font-weight-bold text-center text-uppercase">Galería</h2>
                     <span class="d-block mx-auto my-5 bg-warning bar"></span>
-                    <div class="card-columns" id="baguetteBox">
+                    <div class="card-columns" id="baguetteBox" data-aos="fade-up">
                         <div class="card border-0 rounded-0">
                             <img src="media/gallery-1.jpg" alt="img" class="card-img-top rounded-0">
                             <div class="overlay d-flex align-items-center justify-content-center">
@@ -295,9 +329,9 @@
                             </div>
                         </div>
                         <div class="card border-0 rounded-0">
-                            <img src="media/gallery-5.jpg" alt="" class="card-img-top rounded-0">
+                            <img src="media/gallery-5.JPG" alt="" class="card-img-top rounded-0">
                             <div class="overlay d-flex align-items-center justify-content-center">
-                                <a href="media/gallery-5.jpg">
+                                <a href="media/gallery-5.JPG">
                                     <i class="fas fa-search fa-2x text-white"></i>
                                 </a>
                             </div>
@@ -420,7 +454,8 @@
                                     &nbsp;
                                     <div>
                                         <span
-                                            class="text-warning font-weight-bold font-size-small text-uppercase">propietario & ceo</span>
+                                            class="text-warning font-weight-bold font-size-small text-uppercase">propietario
+                                            & ceo</span>
                                         <h4 class="font-weight-bold text-dark">- Ronald Jandres</h4>
                                     </div>
                                 </div>

@@ -10,8 +10,6 @@ window.onscroll = (e) => {
         navbar.classList.remove('bg-white');
         navbar.classList.remove('shadow-sm');
     }
-
-    section1.style.transform = 'translateY(' + scrollY / 2 + 'px)';
 }
 
 AOS.init();
